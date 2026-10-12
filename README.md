@@ -81,7 +81,8 @@ Bedrock permissions should be limited to the model you enabled, typically `bedro
 ## Project layout
 
 ```text
-app.py                  Streamlit entry point
+app.py                  ASGI entry point (`app`) for Vercel and `streamlit run`
+streamlit_app.py        Streamlit UI
 config.py               Environment settings
 agent/                  Router, tool registry, narration, Bedrock orchestration
 analytics/              CSV loading, quality, metrics, charts, exports
